@@ -1,0 +1,11 @@
+#!/bin/bash
+mkdir PHO
+
+for i in {1..228}; do
+		./first Atomic_Pos_Graphene ./Graphene_matdyn.dyn Cell_Parameter $i 2 2 1 50 $i a
+		mv $i PHO/
+done
+
+./first Atomic_Pos_Graphene 0 Cell_Parameter 0 2 2 1 50 0 a
+
+cd PHO/

@@ -1,0 +1,13 @@
+#!/bin/bash
+mkdir PHO
+
+for i in {1..10}; do
+	for j in {1..24}; do
+		./first Atomic_Pos_Diamond Diamond_matdyn.dyn$i Cell_Parameter $j 8 8 8 50 $i.$j b 
+		mv $i.$j PHO/
+	done
+done
+
+./first Atomic_Pos_Diamond 0 Cell_Parameter 0 8 8 8 50 0 b 
+
+cd PHO/
