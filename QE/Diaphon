@@ -1,0 +1,10 @@
+diamond phonon
+&inputph
+prefix='Shinenew'
+tr2_ph = 1d-14
+ldisp=.true.
+nq1=4, nq2=4, nq3=4
+amass(1)=12.0107
+fildyn='ddii.dyn'
+outdir='./'
+/

@@ -1,0 +1,47 @@
+&control
+prefix='Shinenew'
+calculation='scf'
+restart_mode='from_scratch'
+wf_collect=.true.
+tstress=.true.
+tprnfor=.true.
+outdir='./'
+verbosity='high'
+wfcdir='./'
+pseudo_dir='./'
+/
+&system
+ibrav=0
+celldm(1)=6.649
+nat=8
+ntyp=1
+ecutwfc=100.0
+/ 
+&electrons
+electron_maxstep=100
+conv_thr=1.0d-10
+mixing_mode='plain'
+mixing_beta=0.7
+mixing_ndim=8
+diagonalization='david'
+diago_david_ndim=4
+diago_full_acc=.true.
+/
+CELL_PARAMETERS alat
+1.0    0.0    0.0
+0.0    1.0    0.0
+0.0    0.0    1.0
+ATOMIC_SPECIES
+C 12.0107 C.pw-mt_fhi.UPF
+ATOMIC_POSITIONS alat
+C 0.00    0.00    0.00
+C 0.5     0.5     0.0
+C 0.5     0.0     0.5
+C 0.0     0.5     0.5
+C 0.25    0.25    0.25
+C 0.75    0.75    0.25
+C 0.75    0.25    0.75
+C 0.25    0.75    0.75
+K_POINTS {automatic}
+8 8 8 0 0 0
+
