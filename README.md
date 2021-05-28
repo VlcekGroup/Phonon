@@ -1,3 +1,5 @@
+# About
+This code generates supercells with either a combination of displacement modes to sample the electron-phonon coupling (within the frozen phonon approximation). Part of this code is inspired by work published in XXX
 # Manual
 
 ## How to start
