@@ -1,4 +1,9 @@
-//Yuehan Li
+/*
+Developed 2021, and copyrighted to the authors: Yuehan Li and Vojtech Vlcek,
+at the University of California, Santa Barbara
+
+If you use or modify any part of this routine, the header should be kept, unmodified.
+*/
 #include <iostream>
 #include <fstream>
 #include <string>
